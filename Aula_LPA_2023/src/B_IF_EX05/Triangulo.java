@@ -19,34 +19,34 @@ public class Triangulo {
         this.ladoB = ladoB;
         this.ladoC = ladoC;
 
-        if ((this.ladoA == this.ladoB)
+        if  
+            ((this.ladoA == this.ladoB)
                 && ((this.ladoA == this.ladoC))
-                && (this.ladoB == this.ladoC)) {
+                && (this.ladoB == this.ladoC)) 
+            {
             this.classificacao = "O triângulo é equilátero!";
+            }
             else {
                         if ((this.ladoA == this.ladoB)
                         || ((this.ladoA == this.ladoC))
                         || (this.ladoB == this.ladoC)) {
                             this.classificacao = "O triângulo é isósceles!";
-                        } else {
+                        } 
+                        else {
                             if ((this.ladoA != this.ladoB)
                             && ((this.ladoA != this.ladoC))
-                            && (this.ladoB != this.ladoC)) {
-                                
-                                && (this.ladoA + this.ladoB > this.ladoC)
-                                && (this.ladoA + this.ladoC > this.ladoB)
-                                && (this.ladoC + this.ladoB > this.ladoA) &&
-                            }
+                            && (this.ladoB != this.ladoC)                       
+                            && (this.ladoA + this.ladoB > this.ladoC)
+                            && (this.ladoA + this.ladoC > this.ladoB)
+                            && (this.ladoC + this.ladoB > this.ladoA)); 
                             {
                                 this.classificacao = "O triângulo é escaleno!";
-                                else{
-                    this.classificacao = "O triangulo é inválido";
-    }
-
+                                }
+                            else {
+                        this.classificacao = "O triangulo é inválido";
+                                      }  
+                                }
                             }
+        return this.classificacao;
                         }
                     }
-        }
-        return
-    }
-}

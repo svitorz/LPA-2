@@ -14,7 +14,7 @@ public class Altura_Peso_Classificacao {
     private double peso, altura;
     private String resposta;
 
-    public String mostrar_Classificacao(double alt, double peso) {
+    public String mostrar_Classificacao(double altura, double peso) {
         this.altura = altura;
         this.peso = peso;
 
@@ -38,7 +38,6 @@ public class Altura_Peso_Classificacao {
                     this.resposta = "H";
                 }
             }
-            else{
                     if(this.peso <= 60) {
                      this.resposta = "C";
                     }
@@ -50,7 +49,6 @@ public class Altura_Peso_Classificacao {
                     this.resposta = "I";
                     }
                   }    
-            }
         }
         return"A classificação é " + this.resposta;
     }
