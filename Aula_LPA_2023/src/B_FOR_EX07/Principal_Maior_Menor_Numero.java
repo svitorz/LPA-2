@@ -17,8 +17,7 @@ public class Principal_Maior_Menor_Numero {
             Integer.parseInt(
             JOptionPane.showInputDialog("Informe um número inteiro: "))
             );
-            
-            JOptionPane.showMessageDialog.maior_menor.mostrar
-        }
+            }
+            JOptionPane.showMessageDialog(null, maior_menor.mostrar());
     }
 }
