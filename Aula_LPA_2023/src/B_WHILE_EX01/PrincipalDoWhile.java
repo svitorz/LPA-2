@@ -12,15 +12,13 @@ public class PrincipalDoWhile {
         String letra;
         EX_DOWHILE ex_dowhile = new EX_DOWHILE();
         
-        int numero;
-        
       do{
           numero = Integer.parseInt(
           JOptionPane.showInputDialog("Informe o número:"));
           ex_dowhile.somar(numero);
       }while(numero != 0);
       
-      JOptionPane.showMessageDialog(null, ex_dowhile.mostra());
+      JoptionPane.showMessageDialog(null, ex_dowhile.mostra);
     }
 }
 

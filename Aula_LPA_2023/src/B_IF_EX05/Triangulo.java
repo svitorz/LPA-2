@@ -18,21 +18,35 @@ public class Triangulo {
         this.ladoA = ladoA;
         this.ladoB = ladoB;
         this.ladoC = ladoC;
-    
-    if((this.ladoA == this.ladoB)&& (this.ladoB == this.ladoC) && (this.ladoA== this.ladoC)){
-            this.classificacao= "Triângulo Equilátero";
-    }
-    
-    else if((this.ladoA == this.ladoB) || (this.ladoB == this.ladoC) || (this.ladoA == this.ladoC)){
-        this.classificacao="Triângulo Isósceles";
-    }
-    else if ((this.ladoA != this.ladoB) && (this.ladoB != this.ladoC) && (this.ladoA != this.ladoC) && 
-        (this.ladoA+this.ladoB>this.ladoC)&& (this.ladoB+this.ladoC>this.ladoA) && (this.ladoA+this.ladoC>this.ladoB)){
-        this.classificacao="Triângulo Escaleno";
-    }
-    else {
-        this.classificacao="Triângulo inválido";
-    }
-    return "Tipo: " + this.classificacao;
-    }  
-}
+
+        if  
+            ((this.ladoA == this.ladoB)
+                && ((this.ladoA == this.ladoC))
+                && (this.ladoB == this.ladoC)) 
+            {
+            this.classificacao = "O triângulo é equilátero!";
+            }
+            else {
+                        if ((this.ladoA == this.ladoB)
+                        || ((this.ladoA == this.ladoC))
+                        || (this.ladoB == this.ladoC)) {
+                            this.classificacao = "O triângulo é isósceles!";
+                        } 
+                        else {
+                            if ((this.ladoA != this.ladoB)
+                            && ((this.ladoA != this.ladoC))
+                            && (this.ladoB != this.ladoC)                       
+                            && (this.ladoA + this.ladoB > this.ladoC)
+                            && (this.ladoA + this.ladoC > this.ladoB)
+                            && (this.ladoC + this.ladoB > this.ladoA)); 
+                            {
+                                this.classificacao = "O triângulo é escaleno!";
+                                }
+                            else {
+                        this.classificacao = "O triangulo é inválido";
+                                      }  
+                                }
+                            }
+        return this.classificacao;
+                        }
+                    }
