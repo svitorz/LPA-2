@@ -11,7 +11,7 @@ public class CardapioDAO {
    boolean valida;
     String conta;
     DecimalFormat decimalformat = new DecimalFormat("#,###.00");
-    public boolean somarConta(CardapioDTO cardapioDTO) {
+    public boolean mostrarCod(CardapioDTO cardapioDTO) {
         try {
             valida = true;
             if (cardapioDTO.getCodigo() == 1) {
@@ -39,9 +39,9 @@ public class CardapioDAO {
                                 cardapioDTO.setValor_total(cardapioDTO.getValor_total() + 1.00);
                             } 
                             else {
-                                if (cardapioDTO.getCodigo() != 0) {
+                                if ((cardapioDTO.getCodigo() != 0)&&(cardapioDTO.getCodigo()>5)){
                                     valida = false;
-                                }
+                                } 
                             }
                         }
                     }
