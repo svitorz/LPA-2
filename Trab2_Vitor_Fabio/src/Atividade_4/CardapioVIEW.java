@@ -8,13 +8,19 @@ public class CardapioVIEW {
     CardapioCTR cardapioCTR = new CardapioCTR();
     CardapioDTO cardapioDTO = new CardapioDTO();
     
-        do{
+ do{
         cardapioDTO.setCodigo(
         Integer.parseInt(JOptionPane.showInputDialog("Insira o código do produto: ")
             ));
-    }while(cardapioDTO.getCodigo()!=0);
+        
+        cardapioCTR.mostrarCod(cardapioDTO);
+        if(cardapioDTO.getCodigo() > 5){
+            JOptionPane.showMessageDialog(null, "O código inserido é invalido!");
+        }
+    } while(cardapioDTO.getCodigo()!=0);
         
      JOptionPane.showMessageDialog(null, cardapioCTR.imprimir(cardapioDTO));
+     
     } 
         catch (Exception e){
             JOptionPane.showMessageDialog(null,
