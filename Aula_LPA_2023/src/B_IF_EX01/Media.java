@@ -9,7 +9,6 @@ public class Media {
     this.nota2 = nota2;
     this.mediaf = (nota1 + nota2)/2;
  
-    
     if(mediaf>=6) {
         resposta = "Aprovado";
         }
@@ -21,6 +20,7 @@ public class Media {
             resposta = "Reprovado";  
                 }
             }
+
     return this.resposta;
     }
 }

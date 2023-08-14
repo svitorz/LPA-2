@@ -38,7 +38,7 @@ public class Triangulo {
                             && (this.ladoB != this.ladoC)                       
                             && (this.ladoA + this.ladoB > this.ladoC)
                             && (this.ladoA + this.ladoC > this.ladoB)
-                            && (this.ladoC + this.ladoB > this.ladoA))
+                            && (this.ladoC + this.ladoB > this.ladoA)); 
                             {
                                 this.classificacao = "O triângulo é escaleno!";
                                 }
